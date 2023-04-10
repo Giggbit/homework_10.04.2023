@@ -563,6 +563,7 @@
             | System.Windows.Forms.Keys.U)));
             this.uAHToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.uAHToolStripMenuItem.Text = "UAH";
+            this.uAHToolStripMenuItem.Click += new System.EventHandler(this.uAHToolStripMenuItem_Click);
             // 
             // eURToolStripMenuItem
             // 

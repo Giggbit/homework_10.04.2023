@@ -34,21 +34,18 @@ namespace homework_10._04._2023
             string op = obj.ToString();
             switch (op) {
                 case "Diesel":
-                    textBox2.Text = "1.59";
-                    sum_petrol = 1.59;
+                    textBox2.Text = "1,59";
                     break;
 
                 case "Benzin":
-                    textBox2.Text = "1.49";
-                    sum_petrol = 1.49;
+                    textBox2.Text = "1,49";
                     break;
 
                 case "Gas":
-                    textBox2.Text = "0.99";
-                    sum_petrol = 0.99;
+                    textBox2.Text = "0,99";
                     break;
             }
-            
+            sum_petrol = Convert.ToDouble(textBox2.Text);
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e) {
@@ -172,6 +169,14 @@ namespace homework_10._04._2023
             textBox13.Text = null;
             textBox14.Text = null;
             textBox15.Text = null;
+        }
+
+        private void uAHToolStripMenuItem_Click(object sender, EventArgs e) {
+            label3.Text = "грн.";
+            label4.Text = "грн.";
+            label5.Text = "грн.";
+            label8.Text = "грн.";
+            label9.Text = "грн.";
         }
     }
 }
